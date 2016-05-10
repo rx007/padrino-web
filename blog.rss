@@ -5,7 +5,7 @@
     <description>Blog - Padrino Ruby Web Framework</description>
     <link>http://padrinorb.com/</link>
     <item>
-      <title>Padrino 0.13.2 - New project flag, Bug fixes and component upgrades</title>
+      <title>Padrino 0.13.2 - New Project Flag, Component Upgrades and Bug Fixes</title>
       <link>http://padrinorb.com/blog/padrino-0-13-2-project-flag-bug-fixes-and-component-upgrades/</link>
       <description>&lt;p&gt;Padrino 0.13.1 was shipped just over 3 months ago in January 2016 and since then we have had many issues reported and fixed. After a few months of effort, we are excited to announce the release of Padrino 0.13.2! This version is filled with a new project generator flag, minimizing dependence on AS, upgrading a few components and a number of other bug fixes.&lt;/p&gt;
 &lt;h2 id="new-api-project-generator-flag"&gt;New API Project Generator Flag&lt;/h2&gt;
