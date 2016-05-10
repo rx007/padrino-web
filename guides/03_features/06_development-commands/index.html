@@ -1,0 +1,181 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /><meta content="initial-scale=1" name="viewport" /><title>Padrino - Development Commands</title><link href="../../../images/favicons/apple-touch-icon-57x57-75d6516e.png" rel="apple-touch-icon" sizes="57x57" /><link href="../../../images/favicons/apple-touch-icon-60x60-76221479.png" rel="apple-touch-icon" sizes="60x60" /><link href="../../../images/favicons/apple-touch-icon-72x72-7bd96522.png" rel="apple-touch-icon" sizes="72x72" /><link href="../../../images/favicons/apple-touch-icon-76x76-30739e4d.png" rel="apple-touch-icon" sizes="76x76" /><link href="../../../images/favicons/apple-touch-icon-114x114-1b1963ee.png" rel="apple-touch-icon" sizes="114x114" /><link href="../../../images/favicons/apple-touch-icon-144x144-b3992622.png" rel="apple-touch-icon" sizes="144x144" /><link href="../../../images/favicons/apple-touch-icon-152x152-48259d13.png" rel="apple-touch-icon" sizes="152x152" /><link href="../../../images/favicons/apple-touch-icon-180x180-b8e9ebf6.png" rel="apple-touch-icon" sizes="180x180" /><link href="../../../images/favicons/favicon-32x32-c7d41b6f.png" rel="icon" sizes="32x32" type="image/png" /><link href="../../../images/favicons/favicon-194x194-a2b53f7f.png" rel="icon" sizes="194x194" type="image/png" /><link href="../../../images/favicons/favicon-96x96-1f5cec29.png" rel="icon" sizes="96x96" type="image/png" /><link href="../../../images/favicons/android-chrome-192x192-a15741d5.png" rel="icon" sizes="192x192" type="image/png" /><link href="../../../images/favicons/favicon-16x16-609a9b93.png" rel="icon" sizes="16x16" type="image/png" /><link href="../../../images/favicons/manifest.json" rel="manifest" /><link color="#5bbad5" href="../../../images/favicons/safari-pinned-tab-a188e924.svg" rel="mask-icon" /><link href="/images/favicons/favicon.ico" rel="shortcut icon" /><meta content="#da532c" name="msapplication-TileColor" /><meta content="../../../images/favicons/mstile-144x144-c2018144.png" name="msapplication-TileImage" /><meta content="/images/favicons/browserconfig.xml" name="msapplication-config" /><meta content="#ffffff" name="theme-color" /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" /><link href="../../../assets/stylesheets/all-072dd7ac.css" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.0/anchor.min.js"></script><script src="../../../assets/javascripts/all-29757799.js"></script><link href="http://padrinorb.com/blog.rss" rel="alternate" title="Blog - Padrino Ruby Web Framework" type="application/rss+xml" /></head><body class="guides guides_03_features guides_03_features_06_development-commands guides_03_features_06_development-commands_index"><div class="grid"><header class="header"><h1 class="header__name"><a class="padrino-name" href="/">Padrino</a></h1><div class="header__navigation"><nav class="navigation"><a class="navigation__toggler" href="#" id="navigation__toggler"><span class="navigation__toggler__icon fa fa-navicon"></span></a><ul class="navigation__items" id="navigation__items"><li class="navigation__item"><a class="navigation__link" href="/">Overview</a></li><li class="navigation__item"><a class="navigation__link--is-active" href="/guides/">Guides</a></li><li class="navigation__item"><a class="navigation__link" href="/blog/">Blog</a></li><li class="navigation__item"><a class="navigation__link" href="http://www.rubydoc.info/github/padrino/padrino-framework">API</a></li><li class="navigation__item"><a class="navigation__link" href="/contribute/">Contribute</a></li><li class="navigation__item"><a class="navigation__link" href="https://github.com/padrino/padrino-framework"><span class="button--slim">GitHub</span></a></li></ul></nav></div></header><div class="page"><div class="page__sidebar"><div class="sidebar"><h4 class="sidebar__header--first">Guides</h4><h5 class="sidebar__header"><a href="/guides/introduction/">Introduction</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/introduction/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/introduction/why-learn-padrino/">Why Learn Padrino?</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/introduction/examples/">Examples</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/introduction/the-bleeding-edge/">The Bleeding Edge</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/introduction/press/">Press</a></li></ul><h5 class="sidebar__header"><a href="/guides/getting-started/">Getting Started</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/getting-started/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/getting-started/basic-projects/">Basic Projects</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/getting-started/installation/">Installation</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/getting-started/blog-tutorial/">Blog Tutorial</a></li></ul><h5 class="sidebar__header"><a href="/guides/features/">Features</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/padrino-admin/">Padrino Admin</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/padrino-mailer/">Padrino Mailer</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/padrino-cache/">Padrino Cache</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/mounting-applications/">Mounting Applications</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/development-commands/">Development Commands</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/extensions/">Extensions</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/localization/">Localization</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/rake-tasks/">Rake Tasks</a></li></ul><h5 class="sidebar__header"><a href="/guides/generators/">Generators</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/projects/">Projects</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/plugins/">Plugins</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/controllers/">Controllers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/models/">Models</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/migrations/">Migrations</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/mailers/">Mailers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/sub-applications/">Sub-Applications</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/tiny-skeleton/">Tiny Skeleton</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/admin/">Admin</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/components/">Components</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/tasks/">Tasks</a></li></ul><h5 class="sidebar__header"><a href="/guides/controllers/">Controllers</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/routing/">Routing</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/layouts/">Layouts</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/provides-formats/">Provides Format</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/params-whitelisting/">Params Whitelisting</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/route-filters/">Route Filters</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/prioritized-routes/">Prioritized Routes</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/custom-conditions/">Custom Conditions</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/parsing-params/">Parsing Params</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/rendering/">Rendering</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/sessions/">Sessions</a></li></ul><h5 class="sidebar__header"><a href="/guides/application-helpers/">Application Helpers</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/output-helpers/">Output Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/tag-helpers/">Tag Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/asset-helpers/">Asset Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/form-helpers/">Form Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/form-builders/">Form Builders</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/standard-form-builder/">Standard Form Builder</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/custom-form-builders/">Custom Form Builders</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/nested-object-form-support/">Nested Object Form Support</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/format-helpers/">Format Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/render-helpers/">Render Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/custom-helpers/">Custom Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/ujs-helpers/">Unobtrusive JavaScript Helpers</a></li></ul><h5 class="sidebar__header"><a href="/guides/adding-components/">Adding Components</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/persistence-engine/">Persistence Engine</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/javascript-engine/">JavaScript Engine</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/testing-library/">Testing Library</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/mocking-library/">Mocking Library</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/stylesheet-engine/">Stylesheet Engine</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/locale-translations/">Locale Translations</a></li></ul><h5 class="sidebar__header"><a href="/guides/advanced-usage/">Advanced Usage</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/extending-padrino-projects/">Extending Padrino Projects</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/3rd-party-plugins/">3rd Party Plugins</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/asynchronous-concurrency-with-padrino/">Asyncronous Concurrency</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/grape-with-padrino/">Grape with Padrino</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/running-padrino-on-jruby/">Running Padrino on JRuby</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/standalone-usage-in-sinatra/">Standalone Usage in Sinatra</a></li></ul></div></div><div class="page__content"><div class="content"><p class="content__chapter-title">Features</p><h1 id="development-commands">Development Commands</h1>
+<p>Padrino also supports robust logging capabilities. By default, logging
+information will go to the <code>STDOUT</code> in development (for use in a console) and in
+an environment-specific log file <code>log/development.log</code> in test and production
+environments.</p>
+
+<p>You can modify the logging behavior or disable logging altogether (more docs
+<a title="logger" href="http://www.rubydoc.info/github/padrino/padrino-framework/Padrino/Logger">here</a>):</p>
+<pre class="syntax ruby"><code><span class="c1"># boot.rb</span>
+<span class="no">Padrino</span><span class="o">::</span><span class="no">Logger</span><span class="o">::</span><span class="no">Config</span><span class="p">[</span><span class="ss">:development</span><span class="p">][</span><span class="ss">:stream</span><span class="p">]</span> <span class="o">=</span> <span class="ss">:to_file</span>
+<span class="no">Padrino</span><span class="p">.</span><span class="nf">load!</span>
+</code></pre>
+
+<p>To use the logger within a Padrino application, simply refer to the <code>logger</code>
+method accessible within your app and any controller or views:</p>
+<pre class="syntax ruby"><code><span class="c1"># controllers/example.rb</span>
+<span class="no">SimpleApp</span><span class="p">.</span><span class="nf">controllers</span> <span class="k">do</span>
+  <span class="n">get</span><span class="p">(</span><span class="s2">"/test"</span><span class="p">)</span> <span class="p">{</span> <span class="n">logger</span><span class="p">.</span><span class="nf">info</span> <span class="s2">"This is a test"</span> <span class="p">}</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>The logger automatically supports severity through the use of <code>logger.info</code>,
+<code>logger.warn</code>, <code>logger.error</code>, et al.</p>
+
+<p>For more information about the logger, check out our
+<a title="Logger RDoc" href="http://www.rubydoc.info/github/padrino/padrino-framework/Padrino/Logger">Logger RDoc</a>.</p>
+
+<hr>
+<h2 id="development-reloader">Development Reloader</h2>
+<p>Padrino applications also have the enabled ability to automatically reload all
+changing application files without the need to restart the server. Through the
+use of a customized Rack middleware, all files on the &#39;load path&#39; are monitored
+and reloaded whenever changes are applied.</p>
+
+<p>This makes rapid development much easier and provides a better alternative to
+&#39;shotgun&#39; or &#39;rerun&#39; which require the application server to be restarted which
+makes requests take much longer to complete.</p>
+
+<p>An application can explicitly enable / disable reloading through the use of
+options:</p>
+<pre class="syntax ruby"><code><span class="c1"># app.rb</span>
+<span class="k">class</span> <span class="nc">SimpleApp</span> <span class="o">&lt;</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Application</span>
+  <span class="n">disable</span> <span class="ss">:reload</span> <span class="c1"># reload is disabled in all environments</span>
+  <span class="n">enable</span>  <span class="ss">:reload</span> <span class="c1"># enabled in all environments</span>
+<span class="k">end</span>
+</code></pre>
+
+<hr>
+<h2 id="gemfile-dependency-resolution">Gemfile Dependency Resolution</h2>
+<p>Padrino has native support for <code>bundler</code> and the Gemfile system. If your Padrino
+application was generated with <code>padrino g</code>, a Gemfile has already been created
+for your application. This file will contain a list of all the dependencies for
+our application.</p>
+<pre class="syntax ruby"><code><span class="c1"># Gemfile</span>
+<span class="n">source</span> <span class="s1">'https://rubygems.org'</span>
+<span class="n">gem</span> <span class="s1">'rake'</span>
+<span class="n">gem</span> <span class="s1">'padrino'</span><span class="p">,</span> <span class="s1">'0.13.1'</span>
+</code></pre>
+
+<p>This manifest file uses the standard <code>bundler</code> gem syntax of which details can
+be found in the <a title="Bundle Website" href="http://bundler.io/">Bundler Website</a>.</p>
+
+<p>This gem allows us to place all our dependencies into a single file. Padrino
+will then automatically require all necessary files (if they exist on the
+system).</p>
+
+<p>If the dependencies are not on the system, you can automatically vendor all
+necessary gems using the <code>bundle install --path ./vendor</code> command within the
+application root or (only with bundler 1.0) run <code>bundle install</code> to install
+system wide. Note that this is all possible without any further effort than
+adding the Gemfile (or having this generated automatically with generators
+explained later).</p>
+
+<hr>
+<h2 id="auto-load-paths">Auto Load Paths</h2>
+<p>Padrino also intelligently supports requiring useful files within your
+application automatically and provides functionality for easily splitting up
+your application into separate files. Padrino automatically requires
+<code>config/database.rb</code> as a convention for establishing database connection. Also,
+any files within the <code>lib</code> folder will be required automatically by Padrino.</p>
+
+<p>This is powered by the fact that Padrino will automatically load (and reload)
+any directory patterns within the &#39;perquisite paths&#39;. Additional directory
+patterns can be added to the set of reloaded files as needed by simply appending
+to the <code>prerequisites</code> within your application:</p>
+<pre class="syntax ruby"><code><span class="c1"># config/boot.rb</span>
+<span class="no">Padrino</span><span class="p">.</span><span class="nf">after_load</span> <span class="k">do</span>
+  <span class="no">SimpleApp</span><span class="p">.</span><span class="nf">prerequisites</span> <span class="o">&lt;&lt;</span> <span class="no">Padrino</span><span class="p">.</span><span class="nf">root</span><span class="p">(</span><span class="s1">'my_app'</span><span class="p">,</span> <span class="s1">'custom_model.rb'</span><span class="p">)</span>
+  <span class="no">SimpleApp</span><span class="p">.</span><span class="nf">prerequisites</span> <span class="o">&lt;&lt;</span> <span class="no">Padrino</span><span class="p">.</span><span class="nf">root</span><span class="p">(</span><span class="s1">'custom_folder/*.rb'</span><span class="p">)</span>
+<span class="k">end</span>
+<span class="no">Padrino</span><span class="p">.</span><span class="nf">load!</span>
+</code></pre>
+
+<p>This will instruct Padrino to autoload these files (and reload them when changes
+are detected). By default, the load path contains certain paths known to contain
+important files such as controllers, mailers, models, urls, and helpers.</p>
+
+<hr>
+<h2 id="terminal-commands">Terminal Commands</h2>
+<p>Padrino also comes equipped with multiple useful terminal commands which can be
+activated to perform common tasks such as starting / stopping the application,
+executing the unit tests or activating an irb session.</p>
+
+<p>The following commands are available:</p>
+<pre class="syntax shell"><code><span class="c"># starts the app server (non-daemonized)</span>
+<span class="gp">$ </span>padrino start
+<span class="c"># starts the app server (daemonized) with given port, environment and adapter</span>
+<span class="gp">$ </span>padrino start -d -p 3000 -e development -a thin
+
+<span class="c"># Stops a daemonized app server</span>
+<span class="gp">$ </span>padrino stop
+
+<span class="c"># Bootup the Padrino console (irb)</span>
+<span class="gp">$ </span>padrino console
+
+<span class="c"># Run/List tasks</span>
+<span class="gp">$ </span>padrino rake
+
+<span class="c"># Run piece of code in the context of Padrino (with given environment)</span>
+<span class="gp">$ </span>padrino runner <span class="s1">'puts Padrino.env'</span> -e development
+
+<span class="c"># Run Ruby file in the context of Padrino</span>
+<span class="gp">$ </span>padrino r script/my_script.rb
+</code></pre>
+
+<p>The last command &quot;padrino rake&quot; look for rake files in:</p>
+
+<ul>
+<li><code>lib/tasks/**/*.rake</code></li>
+<li><code>tasks/**/*.rake</code></li>
+<li><code>test/test.rake</code></li>
+<li><code>spec/spec.rake</code></li>
+</ul>
+
+<p>In this way you can customize project tasks.</p>
+
+<p>Using these commands can simplify common tasks making development that much
+smoother.</p>
+
+<hr>
+<h2 id="special-folders">Special Folders</h2>
+<p>Padrino load these paths:</p>
+<pre class="syntax shell"><code><span class="c"># special folders</span>
+project/lib
+project/models
+project/shared/lib
+project/shared/models
+project/each_app/models
+</code></pre>
+
+<p>This mean that you are free to store for example <code>models</code> where you prefer, if
+you have two or more apps with same models you can use <code>project/shared/models</code>
+or <code>root/models</code>.</p>
+
+<p>If you have only one app you still use <code>project/app/models</code>(this is the default
+<code>padrino g</code> choice)</p>
+
+<p>Remember that if you need to load other paths you can use:</p>
+<pre class="syntax ruby"><code><span class="no">Padrino</span><span class="p">.</span><span class="nf">set_load_paths</span><span class="p">(</span><span class="s2">"path/one"</span><span class="p">)</span>
+</code></pre>
+
+<p>and if you need to load dependencies use:</p>
+<pre class="syntax ruby"><code><span class="no">Padrino</span><span class="p">.</span><span class="nf">require_dependencies</span><span class="p">(</span><span class="s2">"path/one/**/*.rb"</span><span class="p">)</span>
+</code></pre>
+<p class="updated"> last updated: 2016-05-09</p><div id='disqus_thread'></div>
+<script type='text/javascript'>
+//<![CDATA[
+                  var disqus_shortname = 'padrinorb';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
+<a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>
+</div></div></div><hr /><footer class="footer"><p>Padrino is released under the MIT LICENSE<br/>
+Hosting by <a href="https://pages.github.com">GitHub Pages</a></p>
+<script>anchors.add('').remove('.sidebar h4, .sidebar h5, .header h1');</script></footer></div></body></html>

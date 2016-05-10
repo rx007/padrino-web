@@ -1,0 +1,357 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /><meta content="initial-scale=1" name="viewport" /><title>Padrino - Padrino Cache</title><link href="../../../images/favicons/apple-touch-icon-57x57-75d6516e.png" rel="apple-touch-icon" sizes="57x57" /><link href="../../../images/favicons/apple-touch-icon-60x60-76221479.png" rel="apple-touch-icon" sizes="60x60" /><link href="../../../images/favicons/apple-touch-icon-72x72-7bd96522.png" rel="apple-touch-icon" sizes="72x72" /><link href="../../../images/favicons/apple-touch-icon-76x76-30739e4d.png" rel="apple-touch-icon" sizes="76x76" /><link href="../../../images/favicons/apple-touch-icon-114x114-1b1963ee.png" rel="apple-touch-icon" sizes="114x114" /><link href="../../../images/favicons/apple-touch-icon-144x144-b3992622.png" rel="apple-touch-icon" sizes="144x144" /><link href="../../../images/favicons/apple-touch-icon-152x152-48259d13.png" rel="apple-touch-icon" sizes="152x152" /><link href="../../../images/favicons/apple-touch-icon-180x180-b8e9ebf6.png" rel="apple-touch-icon" sizes="180x180" /><link href="../../../images/favicons/favicon-32x32-c7d41b6f.png" rel="icon" sizes="32x32" type="image/png" /><link href="../../../images/favicons/favicon-194x194-a2b53f7f.png" rel="icon" sizes="194x194" type="image/png" /><link href="../../../images/favicons/favicon-96x96-1f5cec29.png" rel="icon" sizes="96x96" type="image/png" /><link href="../../../images/favicons/android-chrome-192x192-a15741d5.png" rel="icon" sizes="192x192" type="image/png" /><link href="../../../images/favicons/favicon-16x16-609a9b93.png" rel="icon" sizes="16x16" type="image/png" /><link href="../../../images/favicons/manifest.json" rel="manifest" /><link color="#5bbad5" href="../../../images/favicons/safari-pinned-tab-a188e924.svg" rel="mask-icon" /><link href="/images/favicons/favicon.ico" rel="shortcut icon" /><meta content="#da532c" name="msapplication-TileColor" /><meta content="../../../images/favicons/mstile-144x144-c2018144.png" name="msapplication-TileImage" /><meta content="/images/favicons/browserconfig.xml" name="msapplication-config" /><meta content="#ffffff" name="theme-color" /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" /><link href="../../../assets/stylesheets/all-072dd7ac.css" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.0/anchor.min.js"></script><script src="../../../assets/javascripts/all-29757799.js"></script><link href="http://padrinorb.com/blog.rss" rel="alternate" title="Blog - Padrino Ruby Web Framework" type="application/rss+xml" /></head><body class="guides guides_features guides_features_padrino-cache guides_features_padrino-cache_index"><div class="grid"><header class="header"><h1 class="header__name"><a class="padrino-name" href="/">Padrino</a></h1><div class="header__navigation"><nav class="navigation"><a class="navigation__toggler" href="#" id="navigation__toggler"><span class="navigation__toggler__icon fa fa-navicon"></span></a><ul class="navigation__items" id="navigation__items"><li class="navigation__item"><a class="navigation__link" href="/">Overview</a></li><li class="navigation__item"><a class="navigation__link--is-active" href="/guides/">Guides</a></li><li class="navigation__item"><a class="navigation__link" href="/blog/">Blog</a></li><li class="navigation__item"><a class="navigation__link" href="http://www.rubydoc.info/github/padrino/padrino-framework">API</a></li><li class="navigation__item"><a class="navigation__link" href="/contribute/">Contribute</a></li><li class="navigation__item"><a class="navigation__link" href="https://github.com/padrino/padrino-framework"><span class="button--slim">GitHub</span></a></li></ul></nav></div></header><div class="page"><div class="page__sidebar"><div class="sidebar"><h4 class="sidebar__header--first">Guides</h4><h5 class="sidebar__header"><a href="/guides/introduction/">Introduction</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/introduction/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/introduction/why-learn-padrino/">Why Learn Padrino?</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/introduction/examples/">Examples</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/introduction/the-bleeding-edge/">The Bleeding Edge</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/introduction/press/">Press</a></li></ul><h5 class="sidebar__header"><a href="/guides/getting-started/">Getting Started</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/getting-started/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/getting-started/basic-projects/">Basic Projects</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/getting-started/installation/">Installation</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/getting-started/blog-tutorial/">Blog Tutorial</a></li></ul><h5 class="sidebar__header"><a href="/guides/features/">Features</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/padrino-admin/">Padrino Admin</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/padrino-mailer/">Padrino Mailer</a></li><li class="sidebar__item"><a class="sidebar__link--is-active" href="/guides/features/padrino-cache/">Padrino Cache</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/mounting-applications/">Mounting Applications</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/development-commands/">Development Commands</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/extensions/">Extensions</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/localization/">Localization</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/features/rake-tasks/">Rake Tasks</a></li></ul><h5 class="sidebar__header"><a href="/guides/generators/">Generators</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/projects/">Projects</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/plugins/">Plugins</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/controllers/">Controllers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/models/">Models</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/migrations/">Migrations</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/mailers/">Mailers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/sub-applications/">Sub-Applications</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/tiny-skeleton/">Tiny Skeleton</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/admin/">Admin</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/components/">Components</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/generators/tasks/">Tasks</a></li></ul><h5 class="sidebar__header"><a href="/guides/controllers/">Controllers</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/routing/">Routing</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/layouts/">Layouts</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/provides-formats/">Provides Format</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/params-whitelisting/">Params Whitelisting</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/route-filters/">Route Filters</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/prioritized-routes/">Prioritized Routes</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/custom-conditions/">Custom Conditions</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/parsing-params/">Parsing Params</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/rendering/">Rendering</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/controllers/sessions/">Sessions</a></li></ul><h5 class="sidebar__header"><a href="/guides/application-helpers/">Application Helpers</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/output-helpers/">Output Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/tag-helpers/">Tag Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/asset-helpers/">Asset Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/form-helpers/">Form Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/form-builders/">Form Builders</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/standard-form-builder/">Standard Form Builder</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/custom-form-builders/">Custom Form Builders</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/nested-object-form-support/">Nested Object Form Support</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/format-helpers/">Format Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/render-helpers/">Render Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/custom-helpers/">Custom Helpers</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/application-helpers/ujs-helpers/">Unobtrusive JavaScript Helpers</a></li></ul><h5 class="sidebar__header"><a href="/guides/adding-components/">Adding Components</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/persistence-engine/">Persistence Engine</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/javascript-engine/">JavaScript Engine</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/testing-library/">Testing Library</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/mocking-library/">Mocking Library</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/stylesheet-engine/">Stylesheet Engine</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/adding-components/locale-translations/">Locale Translations</a></li></ul><h5 class="sidebar__header"><a href="/guides/advanced-usage/">Advanced Usage</a></h5><ul class="sidebar__items"><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/overview/">Overview</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/extending-padrino-projects/">Extending Padrino Projects</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/3rd-party-plugins/">3rd Party Plugins</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/asynchronous-concurrency-with-padrino/">Asyncronous Concurrency</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/grape-with-padrino/">Grape with Padrino</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/running-padrino-on-jruby/">Running Padrino on JRuby</a></li><li class="sidebar__item"><a class="sidebar__link" href="/guides/advanced-usage/standalone-usage-in-sinatra/">Standalone Usage in Sinatra</a></li></ul></div></div><div class="page__content"><div class="content"><p class="content__chapter-title">Features</p><h1 id="padrino-cache">Padrino Cache</h1>
+<p>This component enables caching of an application&#39;s response contents on both
+page- and fragment-levels. Output cached in this manner is persisted, until it
+expires or is actively expired, in a configurable store of your choosing.
+Several common caching stores are supported out of the box.</p>
+
+<hr>
+<h2 id="caching-quickstart">Caching Quickstart</h2>
+<p>Padrino-cache can reduce the processing load on your site very effectively with
+minimal configuration.</p>
+
+<p>By default, the component caches pages in a file store at <code>tmp/cache</code> within
+your project root. Entries in this store correspond directly to the request
+issued to your server. In other words, responses are cached based on request
+URL, with one cache entry per URL.</p>
+
+<p>This behavior is referred to as <strong>&quot;page-level caching&quot;</strong>. If this strategy meets
+your needs, you can enable it very easily:</p>
+<pre class="syntax ruby"><code><span class="c1">#page-level caching</span>
+<span class="k">class</span> <span class="nc">SimpleApp</span> <span class="o">&lt;</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Application</span>
+  <span class="n">register</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span>
+  <span class="n">enable</span> <span class="ss">:caching</span>
+
+  <span class="n">get</span> <span class="s1">'/foo'</span><span class="p">,</span> <span class="ss">:cache</span> <span class="o">=&gt;</span> <span class="kp">true</span> <span class="k">do</span>
+    <span class="n">expires_in</span> <span class="mi">30</span> <span class="c1"># cached expired at least every 30 seconds</span>
+    <span class="s1">'Hello world'</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>By default the <code>cache_key</code> in these instances is the <code>request.path_info</code> and the
+query string is not considered. You can also provide a custom <code>cache_key</code> for
+any route:</p>
+<pre class="syntax ruby"><code><span class="k">class</span> <span class="nc">SimpleApp</span> <span class="o">&lt;</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Application</span>
+  <span class="n">register</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span>
+  <span class="n">enable</span> <span class="ss">:caching</span>
+
+  <span class="n">get</span> <span class="s1">'/post/:id'</span><span class="p">,</span> <span class="ss">:cache</span> <span class="o">=&gt;</span> <span class="kp">true</span> <span class="k">do</span>
+    <span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+    <span class="n">cache_key</span> <span class="ss">:my_name</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>In this way you can manually expire cache with
+<code>CachedApp.cache.delete(:my_name)</code> for example from the Post model after an
+update.</p>
+
+<p>You can also <strong>cache on a controller-wide</strong> basis:</p>
+<pre class="syntax ruby"><code><span class="c1"># controller-wide caching</span>
+<span class="k">class</span> <span class="nc">SimpleApp</span> <span class="o">&lt;</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Application</span>
+  <span class="n">register</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span>
+  <span class="n">enable</span> <span class="ss">:caching</span>
+
+  <span class="n">get</span> <span class="s1">'/'</span> <span class="k">do</span>
+    <span class="s1">'Hello world'</span>
+  <span class="k">end</span>
+
+  <span class="c1"># Requests to routes within '/admin'</span>
+  <span class="n">controller</span> <span class="s1">'/admin'</span><span class="p">,</span> <span class="ss">:cache</span> <span class="o">=&gt;</span> <span class="kp">true</span> <span class="k">do</span>
+    <span class="n">expires_in</span> <span class="mi">60</span>
+
+    <span class="n">get</span> <span class="s1">'/foo'</span> <span class="k">do</span>
+      <span class="s1">'Url is /admin/foo'</span>
+    <span class="k">end</span>
+
+    <span class="n">get</span> <span class="s1">'/bar'</span> <span class="k">do</span>
+      <span class="s1">'Url is /admin/bar'</span>
+    <span class="k">end</span>
+
+    <span class="c1"># We cache only GET and HEAD request</span>
+    <span class="n">post</span> <span class="s1">'/baz'</span> <span class="k">do</span>
+      <span class="s1">'This will not be cached'</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>If you specify <code>:cache =&gt; true</code> but do not invoke <code>expires_in</code>, the response
+will be cached indefinitely. Most of the time, you will want to specify the
+expiry of a cache entry by <code>expires_in</code>. Even a relatively low value (1 or 2
+seconds) can greatly increase application efficiency, especially when enabled on
+a very active part of your domain.</p>
+
+<hr>
+<h2 id="caching-helpers">Caching Helpers</h2><h3 id="page-caching">Page Caching</h3>
+<p>As described above in the <a title="Caching Quickstart section" href="/guides/features/padrino-cache/">Caching Quickstart section</a>,
+page caching is very easy to integrate into your application.
+To turn it on, simply provide the <code>:cache =&gt; true</code> option on either a controller
+or one of its routes.</p>
+
+<p>By default, cached content is persisted with a &quot;file store&quot; - that is, in a
+subdirectory of your application root.</p>
+<h4 id="expires_in-seconds">expires_in(seconds)</h4>
+<p>This helper is used within a controller or route to indicate how often cached
+<em>page-level</em> content should persist in the cache.</p>
+
+<p>After <code>seconds</code> seconds have passed, content previously cached will be discarded
+and re-rendered. Code associated with that route will <em>not</em> be executed; rather,
+its previous output will be sent to the client with a 200 OK status code.</p>
+<pre class="syntax ruby"><code><span class="c1"># Setting content expiry time</span>
+<span class="k">class</span> <span class="nc">CachedApp</span> <span class="o">&lt;</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Application</span>
+  <span class="n">register</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span> <span class="c1"># includes helpers</span>
+  <span class="n">enable</span> <span class="ss">:caching</span>         <span class="c1"># turns on caching</span>
+
+  <span class="n">controller</span> <span class="s1">'/blog'</span><span class="p">,</span> <span class="ss">:cache</span> <span class="o">=&gt;</span> <span class="kp">true</span> <span class="k">do</span>
+    <span class="n">expires_in</span> <span class="mi">15</span>
+
+    <span class="n">get</span> <span class="s1">'/entries'</span> <span class="k">do</span>
+      <span class="s1">'just broke up eating twinkies lol'</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">CachedApp</span> <span class="o">&lt;</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Application</span>
+  <span class="n">get</span> <span class="s1">'/post/:id'</span><span class="p">,</span> <span class="ss">:cache</span> <span class="o">=&gt;</span> <span class="kp">true</span> <span class="k">do</span>
+    <span class="n">cache_key</span> <span class="p">{</span> <span class="n">request</span><span class="p">.</span><span class="nf">path_info</span> <span class="o">+</span> <span class="s2">"?"</span> <span class="o">+</span> <span class="n">params</span><span class="p">.</span><span class="nf">slice</span><span class="p">(</span><span class="s2">"name"</span><span class="p">,</span> <span class="s2">"page"</span><span class="p">).</span><span class="nf">to_param</span> <span class="p">}</span>
+    <span class="vi">@post</span> <span class="o">=</span> <span class="no">Post</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>This will modify the <code>cache_key</code> to include the <code>name</code> and <code>page</code> query parameters.</p>
+<h3 id="fragment-caching">Fragment Caching</h3>
+<p>Whereas page-level caching, described in the first section of this document,
+works by grabbing the entire output of a route, fragment caching gives the
+developer fine-grained control of what gets cached. This type of caching occurs
+at whatever level you choose.</p>
+
+<p>Possible uses for fragment caching might include:</p>
+
+<ul>
+<li>a &#39;feed&#39; of some items on a page</li>
+<li>output fetched (by proxy) from an API on a third-party site</li>
+<li>parts of your page which are largely static/do not need re-rendering every
+request</li>
+<li>any output which is expensive to render</li>
+</ul>
+<h4 id="cache-key-opts-amp-block">cache(key, opts, &amp;block)</h4>
+<p>This helper is used anywhere in your application you would like to associate a
+fragment to be cached. It can be used in within a route:</p>
+<pre class="syntax ruby"><code><span class="c1"># Caching a fragment</span>
+<span class="k">class</span> <span class="nc">MyTweets</span> <span class="o">&lt;</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Application</span>
+  <span class="n">register</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span>
+  <span class="n">enable</span> <span class="ss">:caching</span>
+
+  <span class="n">controller</span> <span class="s1">'/tweets'</span> <span class="k">do</span>
+    <span class="n">get</span> <span class="ss">:feed</span><span class="p">,</span> <span class="ss">:map</span> <span class="o">=&gt;</span> <span class="s1">'/:username'</span> <span class="k">do</span>
+      <span class="n">username</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="ss">:username</span><span class="p">]</span>
+
+      <span class="vi">@feed</span> <span class="o">=</span> <span class="n">cache</span><span class="p">(</span> <span class="s2">"feed_for_</span><span class="si">#{</span><span class="n">username</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="ss">:expires_in</span> <span class="o">=&gt;</span> <span class="mi">3</span> <span class="p">)</span> <span class="k">do</span>
+        <span class="vi">@tweets</span> <span class="o">=</span> <span class="no">Tweet</span><span class="p">.</span><span class="nf">all</span><span class="p">(</span> <span class="ss">:username</span> <span class="o">=&gt;</span> <span class="n">username</span> <span class="p">)</span>
+        <span class="n">render</span> <span class="s1">'partials/feedcontent'</span>
+      <span class="k">end</span>
+
+      <span class="c1"># Below outputs @feed in its markup</span>
+      <span class="n">render</span> <span class="s1">'feeds/show'</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>This example adds a key to the cache of format <code>feed_for_#{username}</code> which
+contains the contents of that user&#39;s feed. Any subsequent action within the next
+3 seconds will fetch the pre-rendered version of <code>feed_for_#{username}</code> from the
+cache instead of re-rendering it. The rest of the page code will, however, be
+re-executed.</p>
+
+<p>Note that any other action will reference the same content if it uses the same
+key:</p>
+<pre class="syntax ruby"><code><span class="c1"># Multiple routes sharing the same cached fragment</span>
+<span class="k">class</span> <span class="nc">MyTweets</span> <span class="o">&lt;</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Application</span>
+  <span class="n">register</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span>  <span class="c1"># includes helpers</span>
+  <span class="n">enable</span> <span class="ss">:caching</span>          <span class="c1"># turns on caching</span>
+
+  <span class="n">controller</span> <span class="ss">:tweets</span> <span class="k">do</span>
+    <span class="n">get</span> <span class="ss">:feed</span><span class="p">,</span> <span class="ss">:map</span> <span class="o">=&gt;</span> <span class="s1">'/:username'</span> <span class="k">do</span>
+      <span class="n">username</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="ss">:username</span><span class="p">]</span>
+
+      <span class="vi">@feed</span> <span class="o">=</span> <span class="n">cache</span><span class="p">(</span> <span class="s2">"feed_for_</span><span class="si">#{</span><span class="n">username</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="ss">:expires_in</span> <span class="o">=&gt;</span> <span class="mi">3</span> <span class="p">)</span> <span class="k">do</span>
+        <span class="vi">@tweets</span> <span class="o">=</span> <span class="no">Tweet</span><span class="p">.</span><span class="nf">all</span><span class="p">(</span> <span class="ss">:username</span> <span class="o">=&gt;</span> <span class="n">username</span> <span class="p">)</span>
+        <span class="n">render</span> <span class="s1">'partials/feedcontent'</span>
+      <span class="k">end</span>
+
+      <span class="c1"># Below outputs @feed somewhere in its markup</span>
+      <span class="n">render</span> <span class="s1">'feeds/show'</span>
+    <span class="k">end</span>
+
+    <span class="n">get</span> <span class="ss">:mobile_feed</span><span class="p">,</span> <span class="ss">:map</span> <span class="o">=&gt;</span> <span class="s1">'/:username.iphone'</span> <span class="k">do</span>
+      <span class="n">username</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="ss">:username</span><span class="p">]</span>
+
+      <span class="vi">@feed</span> <span class="o">=</span> <span class="n">cache</span><span class="p">(</span> <span class="s2">"feed_for_</span><span class="si">#{</span><span class="n">username</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="ss">:expires_in</span> <span class="o">=&gt;</span> <span class="mi">3</span> <span class="p">)</span> <span class="k">do</span>
+        <span class="vi">@tweets</span> <span class="o">=</span> <span class="no">Tweet</span><span class="p">.</span><span class="nf">all</span><span class="p">(</span> <span class="ss">:username</span> <span class="o">=&gt;</span> <span class="n">username</span> <span class="p">)</span>
+        <span class="n">render</span> <span class="s1">'partials/feedcontent'</span>
+      <span class="k">end</span>
+
+      <span class="n">render</span> <span class="s1">'feeds/show.iphone'</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>The <code>opts</code> argument is actually passed to the underlying store. All stores
+included with Padrino support the <code>:expires_in</code> option out of the box.</p>
+
+<p>Finally, to DRY up things a bit, we might do:</p>
+<pre class="syntax ruby"><code><span class="c1"># Multiple routes sharing the same cached fragment</span>
+<span class="k">class</span> <span class="nc">MyTweets</span> <span class="o">&lt;</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Application</span>
+  <span class="n">register</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span>  <span class="c1"># includes helpers</span>
+  <span class="n">enable</span> <span class="ss">:caching</span>          <span class="c1"># turns on caching</span>
+
+  <span class="n">controller</span> <span class="ss">:tweets</span> <span class="k">do</span>
+    <span class="c1"># This works because all routes in this controller specify :username</span>
+    <span class="n">before</span> <span class="k">do</span>
+      <span class="vi">@feed</span> <span class="o">=</span> <span class="n">cache</span><span class="p">(</span> <span class="s2">"feed_for_</span><span class="si">#{</span><span class="n">params</span><span class="p">[</span><span class="ss">:username</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="ss">:expires_in</span> <span class="o">=&gt;</span> <span class="mi">3</span> <span class="p">)</span> <span class="k">do</span>
+        <span class="vi">@tweets</span> <span class="o">=</span> <span class="no">Tweet</span><span class="p">.</span><span class="nf">all</span><span class="p">(</span> <span class="ss">:username</span> <span class="o">=&gt;</span> <span class="n">params</span><span class="p">[</span><span class="ss">:username</span><span class="p">]</span> <span class="p">)</span>
+        <span class="n">render</span> <span class="s1">'partials/feedcontent'</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+
+    <span class="n">get</span> <span class="ss">:feed</span><span class="p">,</span> <span class="ss">:map</span> <span class="o">=&gt;</span> <span class="s1">'/:username'</span> <span class="k">do</span>
+      <span class="n">render</span> <span class="s1">'feeds/show'</span>
+    <span class="k">end</span>
+
+    <span class="n">get</span> <span class="ss">:mobile_feed</span><span class="p">,</span> <span class="ss">:map</span> <span class="o">=&gt;</span> <span class="s1">'/:username.iphone'</span> <span class="k">do</span>
+      <span class="n">render</span> <span class="s1">'feeds/show.iphone'</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>Of course, this example assumes the markup generated by rendering
+<code>partials/feedcontent</code> would be suitable for both feed formats. This may or may
+not be the case in your application, but the principle applies: fragments are
+shared between all code which accesses the cache using the same key.</p>
+<h3 id="expiring-cached-content">Expiring Cached Content</h3>
+<p>In certain circumstances, cached content becomes stale. The <code>expire</code> helper
+removes content associated with a key or keys, which your app is then free to
+re-generate.</p>
+<h4 id="expire-key">expire(*key)</h4><h5 id="fragment-level-expiration">Fragment-level expiration</h5>
+<p>Using the example above of a tweet server, let&#39;s suppose our users have a
+tendency to post things they quickly regret. When we query our database for new
+tweets, let&#39;s check to see if any have been deleted. If so, we&#39;ll do our user a
+favor and instantly re-render the feed.</p>
+<pre class="syntax ruby"><code><span class="c1"># Expiring fragment-level cached content</span>
+<span class="k">class</span> <span class="nc">MyTweets</span> <span class="o">&lt;</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Application</span>
+  <span class="n">register</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span>
+  <span class="n">enable</span> <span class="ss">:caching</span>
+  <span class="n">enable</span> <span class="ss">:session</span> <span class="c1"># we'll use this to store last time visited</span>
+
+  <span class="no">COMPANY_FOUNDING</span> <span class="o">=</span> <span class="no">Time</span><span class="p">.</span><span class="nf">utc</span><span class="p">(</span> <span class="mi">2016</span><span class="p">,</span> <span class="s2">"April"</span> <span class="p">)</span>
+
+  <span class="n">controller</span> <span class="ss">:tweets</span> <span class="k">do</span>
+    <span class="n">get</span> <span class="ss">:feed</span><span class="p">,</span> <span class="ss">:map</span> <span class="o">=&gt;</span> <span class="s1">'/:username'</span> <span class="k">do</span>
+      <span class="n">last_visit</span> <span class="o">=</span> <span class="n">session</span><span class="p">[</span><span class="ss">:last_visit</span><span class="p">]</span> <span class="o">||</span> <span class="n">params</span><span class="p">[</span><span class="ss">:since</span><span class="p">]</span> <span class="o">||</span> <span class="no">COMPANY_FOUNDING</span>
+
+      <span class="n">username</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="ss">:username</span><span class="p">]</span>
+      <span class="vi">@tweets</span> <span class="o">=</span> <span class="no">Tweet</span><span class="p">.</span><span class="nf">since</span><span class="p">(</span> <span class="n">last_visit</span><span class="p">,</span> <span class="ss">:username</span> <span class="o">=&gt;</span> <span class="n">username</span> <span class="p">).</span><span class="nf">limit</span><span class="p">(</span> <span class="mi">100</span> <span class="p">)</span>
+
+      <span class="n">expire</span><span class="p">(</span> <span class="s2">"feed since </span><span class="si">#{</span><span class="n">last_visit</span><span class="si">}</span><span class="s2">"</span> <span class="p">)</span> <span class="k">if</span> <span class="vi">@tweets</span><span class="p">.</span><span class="nf">any?</span> <span class="p">{</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span> <span class="n">t</span><span class="p">.</span><span class="nf">deleted_since?</span><span class="p">(</span> <span class="n">last_visit</span> <span class="p">)</span> <span class="p">}</span>
+
+      <span class="n">session</span><span class="p">[</span><span class="ss">:last_visit</span><span class="p">]</span> <span class="o">=</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span>
+      <span class="vi">@feed</span> <span class="o">=</span> <span class="n">cache</span><span class="p">(</span> <span class="s2">"feed since </span><span class="si">#{</span><span class="n">last_visit</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="ss">:expires_in</span> <span class="o">=&gt;</span> <span class="mi">60</span> <span class="p">)</span> <span class="k">do</span>
+        <span class="vi">@tweets</span> <span class="o">=</span> <span class="vi">@tweets</span><span class="p">.</span><span class="nf">find_all</span> <span class="p">{</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span> <span class="o">!</span><span class="n">t</span><span class="p">.</span><span class="nf">deleted?</span> <span class="p">}</span>
+        <span class="n">render</span> <span class="s1">'partials/feedcontent'</span>
+      <span class="k">end</span>
+
+      <span class="n">render</span> <span class="s1">'feeds/show'</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>Normally, this example will only re-cache feed content every 60 seconds, but it
+will do so immediately if any tweets have been deleted.</p>
+<h5 id="page-level-expiration">Page-level expiration</h5>
+<p>Page-level expiration works exactly like the example above by using <code>expire</code> in
+your controller.</p>
+
+<p>The key is typically <code>env[&#39;PATH_INFO&#39;]</code>.</p>
+
+<hr>
+<h2 id="cache-stores">Cache Stores</h2>
+<p>You can set a global caching option or a per app caching options.</p>
+<h3 id="global-caching-options">Global Caching Options</h3><pre class="syntax ruby"><code><span class="no">Padrino</span><span class="p">.</span><span class="nf">cache</span> <span class="o">=</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Memcache</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="o">::</span><span class="no">Memcached</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'127.0.0.1:11211'</span><span class="p">,</span> <span class="ss">:exception_retry_limit</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">))</span>
+<span class="no">Padrino</span><span class="p">.</span><span class="nf">cache</span> <span class="o">=</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Memcache</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="o">::</span><span class="no">Dalli</span><span class="o">::</span><span class="no">Client</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'127.0.0.1:11211'</span><span class="p">,</span> <span class="ss">:exception_retry_limit</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">))</span>
+<span class="no">Padrino</span><span class="p">.</span><span class="nf">cache</span> <span class="o">=</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Redis</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="o">::</span><span class="no">Redis</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:host</span> <span class="o">=&gt;</span> <span class="s1">'127.0.0.1'</span><span class="p">,</span> <span class="ss">:port</span> <span class="o">=&gt;</span> <span class="mi">6379</span><span class="p">,</span> <span class="ss">:db</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">))</span>
+<span class="no">Padrino</span><span class="p">.</span><span class="nf">cache</span> <span class="o">=</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Memory</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="no">Padrino</span><span class="p">.</span><span class="nf">cache</span> <span class="o">=</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">File</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="sr">/my/</span><span class="n">cache</span><span class="o">/</span><span class="n">path</span><span class="p">)</span>
+</code></pre>
+
+<p>You can manage your cache from anywhere in your app:</p>
+<pre class="syntax ruby"><code><span class="no">Padrino</span><span class="p">.</span><span class="nf">cache</span> <span class="o">=</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Memcache</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="o">::</span><span class="no">Memcached</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'127.0.0.1:11211'</span><span class="p">,</span> <span class="ss">:exception_retry_limit</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">))</span>
+<span class="no">Padrino</span><span class="p">.</span><span class="nf">cache</span> <span class="o">=</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Memcache</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="o">::</span><span class="no">Dalli</span><span class="o">::</span><span class="no">Client</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'127.0.0.1:11211'</span><span class="p">,</span> <span class="ss">:exception_retry_limit</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">))</span>
+<span class="no">Padrino</span><span class="p">.</span><span class="nf">cache</span> <span class="o">=</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Redis</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="o">::</span><span class="no">Redis</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:host</span> <span class="o">=&gt;</span> <span class="s1">'127.0.0.1'</span><span class="p">,</span> <span class="ss">:port</span> <span class="o">=&gt;</span> <span class="mi">6379</span><span class="p">,</span> <span class="ss">:db</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">))</span>
+<span class="no">Padrino</span><span class="p">.</span><span class="nf">cache</span> <span class="o">=</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Memory</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="no">Padrino</span><span class="p">.</span><span class="nf">cache</span> <span class="o">=</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">File</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="sr">/my/</span><span class="n">cache</span><span class="o">/</span><span class="n">path</span><span class="p">)</span>
+</code></pre>
+<h3 id="application-caching-options">Application Caching Options</h3><pre class="syntax ruby"><code><span class="n">set</span> <span class="ss">:cache</span><span class="p">,</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Memcache</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="o">::</span><span class="no">Memcached</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'127.0.0.1:11211'</span><span class="p">,</span> <span class="ss">:exception_retry_limit</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">set</span> <span class="ss">:cache</span><span class="p">,</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Memcache</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="o">::</span><span class="no">Dalli</span><span class="o">::</span><span class="no">Client</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'127.0.0.1:11211'</span><span class="p">,</span> <span class="ss">:exception_retry_limit</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">set</span> <span class="ss">:cache</span><span class="p">,</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Redis</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="o">::</span><span class="no">Redis</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:host</span> <span class="o">=&gt;</span> <span class="s1">'127.0.0.1'</span><span class="p">,</span> <span class="ss">:port</span> <span class="o">=&gt;</span> <span class="mi">6379</span><span class="p">,</span> <span class="ss">:db</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="p">))</span>
+<span class="n">set</span> <span class="ss">:cache</span><span class="p">,</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Memory</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">set</span> <span class="ss">:cache</span><span class="p">,</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">File</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="no">Padrino</span><span class="p">.</span><span class="nf">root</span><span class="p">(</span><span class="s1">'tmp'</span><span class="p">,</span> <span class="n">app_name</span><span class="p">,</span> <span class="s1">'cache'</span><span class="p">)</span> <span class="c1"># default choice</span>
+</code></pre>
+
+<p>You can manage your cache from anywhere in your app:</p>
+<pre class="syntax ruby"><code><span class="no">MyApp</span><span class="p">.</span><span class="nf">cache</span><span class="p">.</span><span class="nf">set</span><span class="p">(</span><span class="s1">'val'</span><span class="p">,</span> <span class="s1">'test'</span><span class="p">)</span>
+<span class="no">MyApp</span><span class="p">.</span><span class="nf">cache</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="s1">'val'</span><span class="p">)</span> <span class="c1"># =&gt; 'test'</span>
+<span class="no">MyApp</span><span class="p">.</span><span class="nf">cache</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="s1">'val'</span><span class="p">)</span>
+<span class="no">MyApp</span><span class="p">.</span><span class="nf">cache</span><span class="p">.</span><span class="nf">flush</span>
+</code></pre>
+<h3 id="cache-store-adapters">Cache Store Adapters</h3>
+<p>Padrino Cache can be used with various types of stores. At the moment, Padrino
+Cache comes shipped with:</p>
+<h4 id="memory">Memory</h4><pre class="syntax ruby"><code><span class="n">set</span> <span class="ss">:cache</span><span class="p">,</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Memory</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
+</code></pre>
+
+<p>The Memory Store takes an integer that sets the size to use.</p>
+<h4 id="file">File</h4><pre class="syntax ruby"><code><span class="n">set</span> <span class="ss">:cache</span><span class="p">,</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">File</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"/path/to/"</span><span class="p">)</span>
+</code></pre>
+
+<p>The File Store takes a path to store the cache.</p>
+<h4 id="memcache">Memcache</h4><pre class="syntax ruby"><code><span class="n">set</span> <span class="ss">:cache</span><span class="p">,</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Memcache</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="o">::</span><span class="no">Memcached</span><span class="p">.</span><span class="nf">new</span><span class="p">)</span>
+</code></pre>
+
+<p>The Memcache Store takes a memcache client instance. If you wanted to use
+another memcached library such as
+<a title="Dalli" href="https://github.com/petergoldstein/dalli">Dalli</a> instead, you would do:</p>
+<pre class="syntax ruby"><code><span class="n">set</span> <span class="ss">:cache</span><span class="p">,</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Memcache</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="o">::</span><span class="no">Dalli</span><span class="o">::</span><span class="no">Client</span><span class="p">.</span><span class="nf">new</span><span class="p">)</span>
+</code></pre>
+<h4 id="redis">Redis</h4><pre class="syntax ruby"><code><span class="n">set</span> <span class="ss">:cache</span><span class="p">,</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Redis</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="o">::</span><span class="no">Redis</span><span class="p">.</span><span class="nf">new</span><span class="p">)</span>
+</code></pre>
+
+<p>The <a title="Redis Store" href="https://github.com/redis-store/redis-store">Redis Store</a>
+takes a <a title="Redis client" href="https://github.com/redis/redis-rb">Redis client</a>
+instance.</p>
+<h4 id="mongo">Mongo</h4><pre class="syntax ruby"><code><span class="n">set</span> <span class="ss">:cache</span><span class="p">,</span> <span class="no">Padrino</span><span class="o">::</span><span class="no">Cache</span><span class="o">::</span><span class="no">Store</span><span class="o">::</span><span class="no">Mongo</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="o">::</span><span class="no">Mongo</span><span class="o">::</span><span class="no">Connection</span><span class="p">.</span><span class="nf">new</span><span class="p">(.</span><span class="nf">.</span><span class="o">.</span><span class="p">))</span>
+</code></pre>
+
+<p>The Mongo Store takes a Mongo connection instance.</p>
+<p class="updated"> last updated: 2016-05-09</p><div id='disqus_thread'></div>
+<script type='text/javascript'>
+//<![CDATA[
+                  var disqus_shortname = 'padrinorb';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
+<a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>
+</div></div></div><hr /><footer class="footer"><p>Padrino is released under the MIT LICENSE<br/>
+Hosting by <a href="https://pages.github.com">GitHub Pages</a></p>
+<script>anchors.add('').remove('.sidebar h4, .sidebar h5, .header h1');</script></footer></div></body></html>
