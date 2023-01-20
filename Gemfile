@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Middleman gems
-gem 'middleman', '>= 4.0.0'
+gem 'middleman', '>= 4.4.0'
 gem 'middleman-blog'
 gem 'middleman-livereload'
 gem 'middleman-syntax'
